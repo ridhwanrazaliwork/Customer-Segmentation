@@ -42,7 +42,7 @@ The dataset for training is around 22,000 and 9,494 for testing.
 
 # Credits
 - [Markdown badges source](https://github.com/Ileriayo/markdown-badges)
-- [Dataset source]([https://raw.githubusercontent.com/Ankit152/IMDB-sentiment-analysis/master/IMDB-Dataset.csv](https://www.kaggle.com/datasets/kunalgupta2616/hackerearth-customer-segmentation-hackathon))
+- [Dataset source](https://www.kaggle.com/datasets/kunalgupta2616/hackerearth-customer-segmentation-hackathon)
 
 # Extra information
 ## Correlation value of features
