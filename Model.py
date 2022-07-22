@@ -1,23 +1,24 @@
 #%% Import library
 import os
 import pickle
-import pandas as pd
+import datetime
 import numpy as np
+import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import datetime
 
+from sklearn.impute import KNNImputer
 from tensorflow.keras.utils import plot_model
-from tensorflow.keras.callbacks import ModelCheckpoint,TensorBoard, EarlyStopping
+from tensorflow.keras import Sequential, Input
 from tensorflow.keras.models import load_model
 from sklearn.metrics import classification_report
-from sklearn.impute import KNNImputer
-from sklearn.preprocessing import MinMaxScaler,LabelEncoder
-from sklearn.preprocessing import OneHotEncoder
-from tensorflow.keras.layers import Dense, Dropout, BatchNormalization
-from tensorflow.keras import Sequential, Input
-from DeepLearnModule import displot_graph,countplot_graph,boxplot,confusion_mat
+from sklearn.model_selection import train_test_split
 from DeepLearnModule import LogisticReg,ModelHist_plot
+from tensorflow.keras.layers import Dense, Dropout, BatchNormalization
+from sklearn.preprocessing import MinMaxScaler,LabelEncoder,OneHotEncoder
+from DeepLearnModule import displot_graph,countplot_graph,boxplot,confusion_mat
+from tensorflow.keras.callbacks import ModelCheckpoint,TensorBoard, EarlyStopping
+from sklearn.metrics import confusion_matrix,classification_report,ConfusionMatrixDisplay
 #%% Data loading & Path
 #Path
 CSV_PATH = os.path.join(os.getcwd(),'Data','Train.csv')
