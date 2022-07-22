@@ -28,10 +28,36 @@ The dataset for training is around 22,000 and 9,494 for testing.
 ![model plot](src/output.png)
 
 ## Model Performance on The Test Dataset
+## Model Training/Test Accuracy plot
+![acc](src/acc.png)
+## Model Training/Test Loss plot
+![Loss](src/loss.png)
+## Tensorboard plot
+![tensorboard](src/tensorboard.png)
 ## Classification Report
-![class report](src/classreport.png)
+![class report](src/class_report.png)
+## Confusion Matrix display
+![confusion_matrix](src/confusion_matrix.png)
 
 
 # Credits
 - [Markdown badges source](https://github.com/Ileriayo/markdown-badges)
-- [Dataset](https://raw.githubusercontent.com/Ankit152/IMDB-sentiment-analysis/master/IMDB-Dataset.csv)
+- [Dataset source]([https://raw.githubusercontent.com/Ankit152/IMDB-sentiment-analysis/master/IMDB-Dataset.csv](https://www.kaggle.com/datasets/kunalgupta2616/hackerearth-customer-segmentation-hackathon))
+
+# Extra information
+## Correlation value of features
+1. job_type: 0.13596388961197914
+2. marital: 0.06393741369352811
+3. education: 0.07207191785440015
+4. default: 0.018498692474409054
+5. housing_loan: 0.144442194297714
+6. personal_loan: 0.06550522151922447
+7. communication_type: 0.14713602417060107
+8. month: 0.2713965669912321
+9. prev_campaign_outcome: 0.3410607961880476
+10. customer_age: 0.892754447498973
+11. balance: 0.8925648560685057
+12. day_of_month: 0.892754447498973
+13. last_contact_duration: 0.8995797389957974
+14. num_contacts_in_campaign: 0.892754447498973
+15. num_contacts_prev_campaign: 0.8918064903466363
